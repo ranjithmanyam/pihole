@@ -14,8 +14,8 @@ services:
       - DNSMASQ_LISTENING=all
       - WEBTHEME=default-dark
       - FTLCONF_MISC_ETC_DNSMASQ_D=true
-      - PUID=1000 # <--- Ensure this is 1000
-      - PGID=1000 # <--- Ensure this is 1000
+      - PIHOLE_UID=1001 # <--- Set this to same as deploy user
+      - PIHOLE_GID=1005 # <--- Set this to same as deploy user gid
       # - FTLCONF_LOCAL_IPV4=192.168.1.53 #Depricated
     env_file:
       - .env
