@@ -13,6 +13,8 @@ services:
       - PIHOLE_DNS_=8.8.8.8;8.8.4.4
       - DNSMASQ_LISTENING=all
       - WEBTHEME=default-dark
+      - PUID=1000 # <--- Ensure this is 1000
+      - PGID=1000 # <--- Ensure this is 1000
       # - FTLCONF_LOCAL_IPV4=192.168.1.53 #Depricated
     env_file:
       - .env
