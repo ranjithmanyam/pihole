@@ -13,6 +13,7 @@ services:
       - PIHOLE_DNS_=8.8.8.8;8.8.4.4
       - DNSMASQ_LISTENING=all
       - WEBTHEME=default-dark
+      - FTLCONF_MISC_ETC_DNSMASQ_D=true
       - PUID=1000 # <--- Ensure this is 1000
       - PGID=1000 # <--- Ensure this is 1000
       # - FTLCONF_LOCAL_IPV4=192.168.1.53 #Depricated
@@ -20,7 +21,7 @@ services:
       - .env
     volumes:
       - pihole_data:/etc/pihole
-      - ./custom/custom.list:/etc/pihole/custom.list
+      - ./dnsmasq.d-custom/:/etc/dnsmasq.d/
     networks:
       - frontend
     cap_add:
