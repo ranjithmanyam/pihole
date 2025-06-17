@@ -20,7 +20,7 @@ services:
       - .env
     volumes:
       - pihole_data:/etc/pihole
-      - ./dnsmasq.d-custom/:/etc/dnsmasq.d/
+      - .custom/custom.list:/etc/pihole/custom.list
     networks:
       - frontend
     cap_add:

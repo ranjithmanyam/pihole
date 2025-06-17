@@ -1,0 +1,10 @@
+192.168.1.53	pihole
+192.168.1.53	pihole.home.local
+192.168.1.100	services
+192.168.1.100	services.home.local
+192.168.1.100	traefik.devdotweb.com
+192.168.1.100	pihole.devdotweb.com
+192.168.1.100	vault.devdotweb.com
+192.168.1.100	gitlab.devdotweb.com
+192.168.1.200	k3s-node1
+192.168.1.200	k3s-node1.home.local
